@@ -1,0 +1,51 @@
+* {
+    // Default styles
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // Body Styles
+    body {
+        // font style of enitre Body
+        font-family: fantasy;
+
+        // My Daily tasks styles
+        header {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        form {
+            // form styles
+            width: 400px;
+            // height: 30px;
+            margin: 0 auto;
+            position: relative !important;
+            // input text styles
+            input[type="text"] {
+                min-width: 400px;
+                padding: 10px;
+                outline: none;
+                border-radius: 20px;
+                border: 3px solid #ddd;
+
+                // input placeholder styles
+                &::placeholder {
+                    color: rgb(64, 153, 98);
+                    font-family: monospace;
+                    font-weight: bold;
+                    opacity: 0.6;
+                }
+            }
+            // styles plus icon
+            .fa-plus{
+                position: absolute;
+                // top: 50%;
+                top: calc(30px/2.5);
+                right: 25px;
+                padding: 1px;
+                cursor: pointer;
+                color: rgb(64, 153, 98);
+            }
+        }
+    }
+}
