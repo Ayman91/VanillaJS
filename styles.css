@@ -15,54 +15,55 @@
   text-align: center;
 }
 
-* body form {
-  width: 400px;
+* body .wrapper {
+  width: 200px;
   margin: 0 auto;
-  position: relative !important;
+  position: relative;
 }
 
-* body form input[type="text"] {
-  min-width: 400px;
-  padding: 10px;
+* body .wrapper input[type="text"] {
+  width: 200px;
   outline: none;
+  padding: 10px;
+  padding-left: 20px;
   border-radius: 20px;
+  padding-right: 40px;
   border: 3px solid #ddd;
 }
 
-* body form input[type="text"]::-webkit-input-placeholder {
-  color: #409962;
-  font-family: monospace;
-  font-weight: bold;
+* body .wrapper input[type="text"]::-webkit-input-placeholder {
   opacity: 0.6;
+  font-weight: bold;
+  font-family: monospace;
+  color: #409962;
 }
 
-* body form input[type="text"]:-ms-input-placeholder {
-  color: #409962;
-  font-family: monospace;
-  font-weight: bold;
+* body .wrapper input[type="text"]:-ms-input-placeholder {
   opacity: 0.6;
+  font-weight: bold;
+  font-family: monospace;
+  color: #409962;
 }
 
-* body form input[type="text"]::-ms-input-placeholder {
-  color: #409962;
-  font-family: monospace;
-  font-weight: bold;
+* body .wrapper input[type="text"]::-ms-input-placeholder {
   opacity: 0.6;
+  font-weight: bold;
+  font-family: monospace;
+  color: #409962;
 }
 
-* body form input[type="text"]::placeholder {
-  color: #409962;
-  font-family: monospace;
-  font-weight: bold;
+* body .wrapper input[type="text"]::placeholder {
   opacity: 0.6;
+  font-weight: bold;
+  font-family: monospace;
+  color: #409962;
 }
 
-* body form .fa-plus {
-  position: absolute;
-  top: calc(30px/2.5);
-  right: 25px;
-  padding: 1px;
+* body .wrapper .fa-plus {
+  right: 10%;
   cursor: pointer;
+  position: absolute;
+  top: calc(26px / 2);
   color: #409962;
 }
 /*# sourceMappingURL=styles.css.map */
