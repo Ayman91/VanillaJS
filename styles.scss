@@ -1,3 +1,15 @@
+// mixins area
+@mixin icon-elements($top, $right, $color, $left) {
+    top: $top;
+    left: $left;
+    color: $color;
+    right: $right;
+    position: absolute;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 * {
     // Default styles
     margin: 0;
@@ -8,18 +20,24 @@
     body {
         // font style of enitre Body
         font-family: fantasy;
-
+        height: 100vh;
+        background: no-repeat;
+        background-image: linear-gradient(to left bottom, #051937, #12476a, #257b9b, #48b3c7, #7beded);
         // header styles
         header {
             padding: 10px;
             font-size: 20px;
             text-align: center;
         }
-        .wrapper {
+
+        // styles of adding tasks input
+        p.wrapper {
+            //2CEDC5 7BEDED
             // form styles
             width: 200px;
             margin: 0 auto;
             position: relative;
+
             // input text styles
             input[type="text"] {
                 width: 200px;
@@ -38,12 +56,45 @@
                     color: rgb(64, 153, 98);
                 }
             }
+
+            // styles of input adding icon
             .fa-plus {
                 right: 10%;
                 cursor: pointer;
                 position: absolute;
                 top: calc(26px / 2);
                 color: rgb(64, 153, 98);
+            }
+        }
+
+        // styles of tasks container
+        .task-container {
+            width: 50%;
+            margin: 30px auto;
+
+            // styles of task list
+            .task-list {
+                border-radius: 5px;
+                height: 30px;
+                .arrange-task {
+                    @include icon-elements(calc(50% / 2), none, #f44336, 10px);
+                }
+                .task-title {
+                    padding: calc(10px / 2) 40px;
+                }
+                width: 400px;
+                margin: 0 auto;
+                position: relative;
+                background-color: #cfd8dc;
+                .fa-check-square {
+                    @include icon-elements(calc(15px / 2), 70px, #1b5e20, none);
+                }
+                .fa-pen-square {
+                    @include icon-elements(calc(15px / 2), 40px, #283593, none);
+                }
+                .fa-minus-square {
+                    @include icon-elements(calc(15px / 2), 10px, #b71c1c, none);
+                }
             }
         }
     }
