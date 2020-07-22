@@ -71,12 +71,12 @@
   color: #409962;
 }
 
-* body .task-container {
+* body .task-list {
   width: 50%;
   margin: 30px auto;
 }
 
-* body .task-container .task-list {
+* body .task-list .task-item {
   border-radius: 5px;
   height: 30px;
   width: 400px;
@@ -85,7 +85,7 @@
   background-color: #cfd8dc;
 }
 
-* body .task-container .task-list .arrange-task {
+* body .task-list .task-item .arrange-task {
   top: calc(50% / 2);
   left: 10px;
   color: #f44336;
@@ -93,15 +93,15 @@
   position: absolute;
 }
 
-* body .task-container .task-list .arrange-task:hover {
+* body .task-list .task-item .arrange-task:hover {
   cursor: pointer;
 }
 
-* body .task-container .task-list .task-title {
+* body .task-list .task-item .task-title {
   padding: calc(10px / 2) 40px;
 }
 
-* body .task-container .task-list .fa-check-square {
+* body .task-list .task-item .fa-check-square {
   top: calc(15px / 2);
   left: none;
   color: #1b5e20;
@@ -109,11 +109,11 @@
   position: absolute;
 }
 
-* body .task-container .task-list .fa-check-square:hover {
+* body .task-list .task-item .fa-check-square:hover {
   cursor: pointer;
 }
 
-* body .task-container .task-list .fa-pen-square {
+* body .task-list .task-item .fa-pen-square {
   top: calc(15px / 2);
   left: none;
   color: #283593;
@@ -121,11 +121,11 @@
   position: absolute;
 }
 
-* body .task-container .task-list .fa-pen-square:hover {
+* body .task-list .task-item .fa-pen-square:hover {
   cursor: pointer;
 }
 
-* body .task-container .task-list .fa-minus-square {
+* body .task-list .task-item .fa-minus-square {
   top: calc(15px / 2);
   left: none;
   color: #b71c1c;
@@ -133,7 +133,7 @@
   position: absolute;
 }
 
-* body .task-container .task-list .fa-minus-square:hover {
+* body .task-list .task-item .fa-minus-square:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -68,12 +68,12 @@
         }
 
         // styles of tasks container
-        .task-container {
+        .task-list {
             width: 50%;
             margin: 30px auto;
 
             // styles of task list
-            .task-list {
+            .task-item {
                 border-radius: 5px;
                 height: 30px;
                 .arrange-task {
