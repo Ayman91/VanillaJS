@@ -1,9 +1,6 @@
 let addIcon = document.querySelector('.fa-plus')
 const input = document.querySelector('input');
 
-// EventListeners
-addIcon.addEventListener('click', createTask);
-
 // creating task
 createTask = () => {
     const taskList = document.querySelector('.task-list');
@@ -19,3 +16,6 @@ createTask = () => {
     </div>`
     input.value = '';
 };
+
+// EventListeners
+addIcon.addEventListener('click', createTask);
